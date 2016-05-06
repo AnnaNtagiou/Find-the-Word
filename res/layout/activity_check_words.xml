@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+   	tools:context="com.example.findtheword.CheckWords" >
+    
+     <TextView
+        android:id="@+id/wordTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="@string/firstWord"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+     
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:background="@color/grey"
+         android:orientation="horizontal" >
+     
+	      <ImageButton
+	        android:id="@+id/seenButton"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.5"
+	        android:background="@null"
+	        android:contentDescription="@string/desc"
+	        android:src="@drawable/ic_seen"/>
+	      
+	       <ImageButton
+	        android:id="@+id/unseenButton"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.5"
+	        android:background="@null"
+	        android:contentDescription="@string/desc"
+	        android:src="@drawable/ic_unseen"/>
+    
+	</LinearLayout>
+	
+    <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:background="@color/grey"
+         android:orientation="horizontal" >
+     
+         <TextView
+	        android:id="@+id/seenTextView"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.5"
+	        android:gravity="center_horizontal"
+	        android:text="@string/seen"
+        	android:textColor="@color/white" />
+         
+         <TextView
+	        android:id="@+id/unseenTextView"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.5"
+	        android:gravity="center_horizontal"
+	        android:text="@string/unseen"
+        	android:textColor="@color/white" />
+         
+	</LinearLayout>
+ 
+    <TextView
+        android:id="@+id/spaceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:text="" />
+    
+
+     
+</LinearLayout>

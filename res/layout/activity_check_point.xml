@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context="com.example.findtheword.CheckPoint" >
+
+    <TextView
+        android:id="@+id/checkInformationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="@drawable/greybox"
+        android:gravity="center"
+        android:text="@string/checkInformation"
+        android:textColor="@color/white" />
+    
+     <ImageButton
+        android:id="@+id/proceedButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@null"
+        android:contentDescription="@string/desc"
+        android:onClick="startProceed"
+        android:src="@drawable/ic_proceed" />
+    
+    <TextView
+        android:id="@+id/proceedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:gravity="center_horizontal"
+        android:text="@string/proceed"
+        android:textColor="@color/white" />
+
+    
+
+</LinearLayout>
